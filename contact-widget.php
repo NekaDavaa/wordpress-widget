@@ -16,7 +16,7 @@
  */
 
 function my_plugin_scripts() {
-    wp_enqueue_script( 'my-js', plugin_dir_url( __FILE__ ) . '/js/script.js', array('jquery' ), '1.0', false );
+    wp_enqueue_script( 'my-js', plugin_dir_url( __FILE__ ) . 'js/script.js', array('jquery' ), '1.0', false );
 }
 add_action( 'wp_enqueue_scripts', 'my_plugin_scripts' );
 
